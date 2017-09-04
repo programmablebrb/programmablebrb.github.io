@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html class="html">
+
+<head>
+
+	<meta charset="UTF-8"/>
+
+	<title>Programmable Breadboard</title>
+	<meta name='description' content='ScrollMe is a jQuery library for adding simple scrolling effects to web pages'>
+
+	<link rel="author" title="Nick Pearson" href="http://nckprsn.com/">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="style.css" media="screen">
+
+	<script src='js/prefixfree.min.js'></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+	<script src='js/jquery.scrollme.js'></script>
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+
+	<section id="scrollme" class="section section_intro scrollme">
+
+		<div class="wrapper">
+
+			<h3
+				class="fittext animateme"
+				data-when="exit"
+				data-from="0"
+				data-to="0.75"
+				data-opacity="0"
+                data-translatey="-250"
+                font-size="4em"
+			>
+                Programmable Breadboard
+			</h1>
+			<h3
+				class="animateme"
+				data-when="exit"
+				data-from="0"
+				data-to="0.75"
+				data-opacity="0"
+				data-translatey="-150"
+			>
+                プログラマブルブレッドボードはあなたの代わりに配線します<br>
+                Programmable Breadboard let it wiring instead of you            
+			</h3>
+
+		</div><!-- wrapper -->
+
+	</section>
+
+	<header class="header">
+
+		<div class="wrapper">
+
+			<nav class="nav nav_onpage">
+				<ul class="plain clearfix">
+					<li class="nav_item_text"><a href="#about">About</a></li>
+					<li class="nav_item_text"><a href="#usage">Usage</a></li>
+					<li class="nav_item_text"><a href="#options">Options</a></li>
+				</ul>
+			</nav>
+
+			<nav class="nav nav_offsite">
+				<ul class="plain clearfix">
+					<li class="nav_item_button button button_alt"><a href="https://twitter.com/programmablebrb"><span class="longtext"><img src="TwitterLogo_white.png" width=16>&nbsp;Twitter</span></a></li>
+					<li class="nav_item_button button"><a href=""><span class="longtext">Facebook group</span></a></li>
+				</ul>
+			</nav>
+
+		</div><!-- wrapper -->
+
+	</header>
+
+	<section class="section">
+
+		<div class="wrapper">
+
+			<h2 id="about">About</h2>
+
+			<div class="columns columns_content">
+
+				<div class="column column_large">
+
+                    <h3>部品を差し込むだけ。結線作業は不要。</h3>
+                    <p>ブレッドボード上で線材を使って接続する代わりに、ブレッドボード内部に設けられたスイッチをONにすることで接続を行います。</p>
+                    
+                    <h3>回路のロード、セーブ、アンドゥ。そしてネット越しのシェアリング。</h3>
+                    <p>プログラマブルブレッドボードの内部結線はデータで瞬時に切り替えられます。データですから保存、読み出しも簡単です。今までのブレッドボード制作では不可能であった、過去資産のコピー・ペースト、作例のネットでのシェア等ももちろん可能です。</p>
+
+                    <h3>本体内に簡易測定器を内蔵。</h3>
+                    <p>小型の本体内には、「可変電圧・電流電源回路」、「簡易オシロスコープ」、「簡易ロジックアナライザ」を内蔵。これ一台で確実な制作をサポートします。</p>
+
+
+				</div><!-- column -->
+
+				<div class="column column_right column_medium">
+
+					<ul class="effects plain clearfix scrollme">
+
+						<li class="effect">
+							<div
+								class="effect_box effect_box_scale animateme"
+								data-when="view"
+								data-from="0.55"
+								data-to="0.05"
+								data-scale="2"
+                            >                       
+                            <img src="pbb1.jpg" width=240/>
+                        </div>
+						</li>
+
+						<li class="effect">
+							<div
+								class="effect_box effect_box_translate animateme"
+								data-when="view"
+								data-from="0.65"
+								data-to="0.15"
+								data-translatex="400"
+								data-translatey="400"
+                            >
+                        <img src="pbb2.jpg" width=240/>
+                            </div>
+						</li>
+					</ul>
+
+				</div><!-- column -->
+
+				<div class="column column_large">
+
+					<h3>例えばこんなシーンで…</h3>
+
+					<ul>
+                        <li>教育で : 専用教育コンテンツの組み合わせで、電子工作分野でのeラーニングを実現。</li>
+                        <li>プロフェッショナルの現場で : 試作等で必要な回路はライブラリからダウンロード。新規部分の開発に専念できます。</li>
+                        <li>ホビーに : じっくり開発、専用SNSで回路をシェア。同好の士と回路はすぐに共有。スピード勝負のハッカソンでも開発スピードアップに貢献。</li>
+					</ul>
+
+				</div><!-- column -->
+
+			</div><!-- columns -->
+
+		</div><!-- wrapper -->
+
+	</section>
+
+	<hr>
+
+	<section class="section">
+
+		<div class="wrapper">
+
+			<h2 id="usage">Usage</h2>
+
+			<div class="columns columns_content">
+
+				<div class="column column_large">
+
+					<h3>回路設計はお手持ちのパソコン、スマホ、タブレットで。完成したらダイレクトに回路を流し込み、即動作開始出来ます。</h3>
+
+                    <p>専用ツール"PBB Configurator"で、配線を編集、ロード、セーブ、シェアリングが出来ます。</p>
+                    <p>データが完成したら、Programmable BreadboardはUSB端子を搭載。PCやスマホと直結してダウンロード可能。将来はWiFiやBluetooth LEへの対応も予定しています</p>
+                    <p>オシロスコープ機能、ロジックアナライザ機能の波形確認も、本ツールで行えます。</p>
+				</div><!-- column -->
+
+				<div class="column column_medium">
+
+
+
+                    <pre
+                        class="animateme scrollme "
+                        data-when="view"
+                        data-from="0.75"
+                        data-to="0"
+                        data-opacity="0"
+                        data-translatex="400"
+                        >
+                    <img src="pbb_appli.JPG" width="400"/>
+                    </pre>
+
+				</div><!-- column -->
+
+			</div><!-- columns -->
+
+
+		</div><!-- wrapper -->
+
+	</section>
+
+	<hr>
+
+
+
+	<footer class="footer scrollme">
+
+		<div
+			class="footer_block animateme"
+			data-when="enter"
+			data-from="1"
+			data-to="0"
+			data-rotatex="90"
+		>
+
+			<div class="wrapper">
+
+				<h3>Also on this page:</h3>
+
+				<ul>
+					<li><a href="https://twitter.com/programmablebrb">Twitter</a></li>
+				</ul>
+
+				<!--p>Made by <a href="http://nckprsn.com">Nick Pearson</a></p-->
+
+			</div><!-- wrapper -->
+
+		</div>
+
+	</footer>
+
+	<script>
+
+		// --------------------------------------------------
+		// Analytics
+/*
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-523605-4', 'nckprsn.com');
+		ga('send', 'pageview');
+*/
+		// --------------------------------------------------
+		/*!
+		* FitText.js 1.1
+		*
+		* Copyright 2011, Dave Rupert http://daverupert.com
+		* Released under the WTFPL license
+		* http://sam.zoy.org/wtfpl/
+		*
+		* Date: Thu May 05 14:23:00 2011 -0600
+		*/
+
+		(function( $ ){
+
+			$.fn.fitText = function( kompressor, options ) {
+
+				// Setup options
+				var compressor = kompressor || 1,
+				settings = $.extend({
+					'minFontSize' : Number.NEGATIVE_INFINITY,
+					'maxFontSize' : Number.POSITIVE_INFINITY
+					}, options);
+
+				return this.each(function(){
+
+					// Store the object
+					var $this = $(this);
+
+					// Resizer() resizes items based on the object width divided by the compressor * 10
+					var resizer = function () {
+						$this.css('font-size', Math.max(Math.min($this.width() / (compressor*20), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+					};
+
+					// Call once to set.
+					setTimeout( function(){ resizer(); } , 250 );
+
+					// Call on resize. Opera debounces their resize by default.
+					$(window).on('resize.fittext orientationchange.fittext', resizer);
+
+				});
+
+			};
+
+		})( jQuery );
+
+		// --------------------------------------------------
+		// FitText init + animate to hash
+
+		$( document ).ready( function()
+		{
+			// Set FitText for main heading
+
+			$( '.fittext' ).fitText( 0.45 );
+
+			// Scroll to hash animation
+
+			$( function()
+			{
+				$( 'a[href*=#]:not([href=#])' ).click( function()
+				{
+					if( location.pathname.replace( /^\// , '' ) == this.pathname.replace( /^\// , '' ) && location.hostname == this.hostname )
+					{
+						var target = $( this.hash );
+						target = target.length ? target : $( '[name='+this.hash.slice( 1 )+']' );
+						if( target.length )
+						{
+							$( 'html,body' ).stop().animate(
+							{
+								scrollTop:target.offset().top - 120
+							} , 1000 );
+							return false;
+						}
+					}
+				});
+			});
+
+		});
+
+		// --------------------------------------------------
+
+	</script>
+
+</body>
+
+</html>
