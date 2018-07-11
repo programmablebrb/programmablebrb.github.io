@@ -1,0 +1,29 @@
+h1.pbb {
+  position: relative;
+  padding: 0em 0;
+}
+
+h1.pbb::before,
+h1.pbb::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 6px;
+  box-sizing: border-box;
+}
+h1.pbb::before {
+  top: 0;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #ff0000;
+}
+h1.pbb::after {
+  bottom: 0;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #0000ff;
+}
+
+body {
+  background: #ffffff;
+  font: 30px sans-serif;
+}
