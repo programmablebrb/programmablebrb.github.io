@@ -1,6 +1,7 @@
 h1.pbb {
   position: relative;
   padding: 0em 0;
+  font: 50px sans-serif;
 }
 
 h1.pbb::before,
@@ -25,5 +26,12 @@ h1.pbb::after {
 
 body {
   background: #ffffff;
-  font: 30px sans-serif;
+}
+
+h2 {
+color: #364e96;/*•¶šF*/
+border: solid 3px #364e96;/*üF*/
+padding: 0.2em;/*•¶šü‚è‚Ì—]”’*/
+border-radius: 0.5em;/*ŠpŠÛ*/
+font: 30px sans-serif;
 }
