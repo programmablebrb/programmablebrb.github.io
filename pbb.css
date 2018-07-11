@@ -29,9 +29,26 @@ body {
 }
 
 h2 {
-color: #364e96;/*•¶šF*/
-border: solid 3px #364e96;/*üF*/
-padding: 0.2em;/*•¶šü‚è‚Ì—]”’*/
-border-radius: 0.5em;/*ŠpŠÛ*/
-font: 30px sans-serif;
+  color: #364e96;
+  border: solid 3px #364e96;
+  padding: 0.2em;
+  border-radius: 0.5em;
+  font: 30px sans-serif;
+}
+
+h3.baloon {
+  position: relative;
+  padding: 0.6em;
+  background: #e0edff;
+}
+
+h3.baloon:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
 }
